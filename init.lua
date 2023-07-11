@@ -40,23 +40,23 @@ return {
         --   "svelte",
         --   "astro"
         -- },
-        ignore_filetypes = { -- disable format on save for specified filetypes
+        -- ignore_filetypes = { -- disable format on save for specified filetypes
           -- "javascript",
-          "javascript",
-          "javascriptreact",
-          "javascript.jsx",
-          "typescript",
-          "typescriptreact",
-          "typescript.tsx",
-          "vue",
-          "svelte",
-          "astro"
-        },
+          -- "javascript",
+          -- "javascriptreact",
+          -- "javascript.jsx",
+          -- "typescript",
+          -- "typescriptreact",
+          -- "typescript.tsx",
+          -- "vue",
+          -- "svelte",
+          -- "astro"
+        -- },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
         -- "sumneko_lua",
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 6000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
@@ -64,6 +64,9 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "eslint",
+      -- "prettierd",
+      -- "tailwindcss",
+      -- "tsserver"
     },
   },
   -- Configure require("lazy").setup() options
