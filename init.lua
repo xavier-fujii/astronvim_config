@@ -17,7 +17,7 @@ return {
     },
   },
   -- Set colorscheme to use
-  colorscheme = "vscode",
+  colorscheme = "bluloco",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -57,7 +57,11 @@ return {
         -- "sumneko_lua",
       },
       timeout_ms = 6000, -- default format timeout
-      -- filter = function(client) -- fully override the default formatting function
+      -- filter = function(client)
+      --   if vim.bo.filetype == "typescriptreact" then
+      --     return client.name == "null-ls"
+      --   end
+      --
       --   return true
       -- end
     },
