@@ -1,3 +1,4 @@
+
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -23,55 +24,40 @@ return {
     virtual_text = true,
     underline = true,
   },
-  lsp = {
-    -- customize lsp formatting options
-    formatting = {
-      -- control auto formatting on save
-      format_on_save = {
-        enabled = true, -- enable or disable format on save globally
-        -- allow_filetypes = { -- enable format on save for specified filetypes only
-        --   "javascript",
-        --   "javascriptreact",
-        --   "javascript.jsx",
-        --   "typescript",
-        --   "typescriptreact",
-        --   "typescript.tsx",
-        --   "vue",
-        --   "svelte",
-        --   "astro"
-        -- },
-        -- ignore_filetypes = { -- disable format on save for specified filetypes
-          -- "javascript",
-          -- "javascript",
-          -- "javascriptreact",
-          -- "javascript.jsx",
-          -- "typescript",
-          -- "typescriptreact",
-          -- "typescript.tsx",
-          -- "vue",
-          -- "svelte",
-          -- "astro"
-        -- },
-      },
-      disabled = { -- disable formatting capabilities for the listed language servers
-        -- "sumneko_lua",
-      },
-      timeout_ms = 6000, -- default format timeout
-      -- filter = function(client)
-      --   if vim.bo.filetype == "typescriptreact" then
-      --     return client.name == "null-ls"
-      --   end
-      --
-      --   return true
-      -- end
+  formatting = {
+    -- control auto formatting on save
+    format_on_save = {
+      enabled = true,   -- enable or disable format on save globally
+      -- allow_filetypes = { -- enable format on save for specified filetypes only
+      --   "javascript",
+      --   "javascriptreact",
+      --   "javascript.jsx",
+      --   "typescript",
+      --   "typescriptreact",
+      --   "typescript.tsx",
+      --   "vue",
+      --   "svelte",
+      --   "astro"
+      -- },
+      -- ignore_filetypes = { -- disable format on save for specified filetypes
+      -- "javascript",
+      -- "javascript",
+      -- "javascriptreact",
+      -- "javascript.jsx",
+      -- "typescript",
+      -- "typescriptreact",
+      -- "typescript.tsx",
+      -- "vue",
+      -- "svelte",
+      -- "astro"
+      -- },
     },
-    -- enable servers that you already have installed without mason
-    servers = {
-      -- "eslint",
-      -- "prettierd",
-      -- "tailwindcss",
-      -- "tsserver"
-    },
+  },
+  servers = {
+    -- "eslint",
+    -- "prettierd",
+    -- "tailwindcss",
+    -- "tsserver"
   },
   -- Configure require("lazy").setup() options
   lazy = {
